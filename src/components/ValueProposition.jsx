@@ -1,16 +1,19 @@
 import { FaBolt, FaIndustry, FaCogs, FaChartLine } from "react-icons/fa";
 import FactoryImage from "/assets/metal-worker-using-machinery-industrial-workshop-generated-by-ai.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ValueProposition = () => {
   return (
     <section className="py-16 px-6 md:px-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-20 items-center">
         {/* Left Image */}
         <div className="relative">
-          <img
+          <LazyLoadImage
             src={FactoryImage}
             alt="Industrial automation"
-            className="rounded-2xl shadow-lg w-full md:h-[500px] object-cover"
+            effect="blur"
+            className="rounded-2xl shadow-lg w-full h-[500px] object-cover"
           />
         </div>
 

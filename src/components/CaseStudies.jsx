@@ -3,7 +3,8 @@ import slide2 from '/assets/metal-worker-using-machinery-industrial-workshop-gen
 import slide3 from '/assets/drone-delivering-goods-city-autonomous-delivery-robot-business-air-transportation-concept.jpg'
 // import slide4 from '/assets/employee-working-marketing-setting.jpg'
 // import slide5 from '/assets/student-home-taking-notes-while-watching-presentation-closeup.jpg'
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 const CaseStudies = () => {
   const caseStudies = [
     {
@@ -53,10 +54,11 @@ const CaseStudies = () => {
           >
             {/* Image */}
             <div className="flex-1">
-              <img
+              <LazyLoadImage
                 src={study.image}
                 alt={study.title}
                 className="shadow-sm w-full h-[300px] object-cover"
+                effect="blur"
               />
             </div>
 

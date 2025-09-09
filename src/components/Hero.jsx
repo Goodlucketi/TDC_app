@@ -37,7 +37,7 @@ const slides = [
 ];
 const Hero = () => {
     return ( 
-        <header>
+        <header id="home" className="h-screen w-full">
             <Swiper
                 modules={[Pagination, Autoplay]}
                 pagination={{ clickable: true }}

@@ -24,9 +24,9 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-20 bg-gray-100 text-center">
+    <section id="about" className="py-20 px-6 md:px-20 bg-gray-100 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            What We Do
+            About Us
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
             At Technology Development Company, we bring innovation and precision to industries through advanced automation and smart technology integration.

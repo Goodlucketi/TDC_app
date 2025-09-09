@@ -40,7 +40,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section className="py-10 px-6 md:px-20 bg-slate-200">
+    <section id="case-studies" className="py-10 px-6 md:px-20 bg-slate-200">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Case Studies
       </h2>
@@ -57,15 +57,15 @@ const CaseStudies = () => {
               <LazyLoadImage
                 src={study.image}
                 alt={study.title}
-                className="shadow-sm w-full h-[300px] object-cover"
+                className="shadow-sm w-full object-cover"
                 effect="blur"
               />
             </div>
 
             {/* Text */}
-            <div className="flex-1">
+            <div className="flex-1 ">
               <h3 className="text-xl font-semibold my-4 md:px-8">{study.title}</h3>
-              <ul className="list-disc list-inside md:px-8 text-gray-700 leading-relaxed">
+              <ul className="list-disc md:px-12 text-gray-700 leading-relaxed">
                 {study.steps.map((step, i) => (
                   <li key={i}>{step}</li>
                 ))}

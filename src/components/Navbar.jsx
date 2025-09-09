@@ -1,5 +1,5 @@
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Logo from "/assets/tdc_logo.png";
 import { useState } from "react";
 
@@ -11,14 +11,17 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/about", label: "About" },
-    { to: "/what-we-do", label: "What We Do" },
-    { to: "/projects", label: "Projects" },
+    { to: "home", label: "Home" },
+    { to: "about", label: "About" },
+    { to: "services", label: "What We Do" },
+    { to: "industries", label: "Industries" },
+    { to: "projects", label: "Projects" },
+    { to: "case-studies", label: "Case Studies" },
+    { to: "contact", label: "Contact" },
   ];
 
   return (
-    <nav className="py-3 px-6 md:px-20 flex items-center justify-between shadow-md bg-white relative z-100">
+    <nav className="py-3 px-6 md:px-20 flex items-center justify-between shadow-md bg-white sticky top-0 z-100">
       {/* Logo */}
       <div className="logo">
         <img src={Logo} alt="TDC Logo" className="w-28 h-auto" />
@@ -39,6 +42,9 @@ const Navbar = () => {
           <li key={link.to}>
             <Link
               to={link.to}
+              smooth={true}
+              duration={500}
+              // offset={-70} // Adjust for fixed navbar height
               className="block p-3 rounded-md hover:bg-blue-800 hover:text-white transition-all duration-300"
               onClick={() => setIsOpen(false)} // close menu after click
             >

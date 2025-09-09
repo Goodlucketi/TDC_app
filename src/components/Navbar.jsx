@@ -1,6 +1,6 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Logo from "../assets/tdc_logo.png";
+import Logo from "../../src/assets/tdc_logo.png";
 import { useState } from "react";
 
 const Navbar = () => {

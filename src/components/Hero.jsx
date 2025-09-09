@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-import slide1 from "../assets/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop.jpg";
-import slide2 from '../assets/metal-worker-using-machinery-industrial-workshop-generated-by-ai.jpg'
-import slide3 from '../assets/drone-delivering-goods-city-autonomous-delivery-robot-business-air-transportation-concept.jpg'
-import slide4 from '../assets/employee-working-marketing-setting.jpg'
-import slide5 from '../assets/student-home-taking-notes-while-watching-presentation-closeup.jpg'
+import slide1 from "/assets/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop.jpg";
+import slide2 from '/assets/metal-worker-using-machinery-industrial-workshop-generated-by-ai.jpg'
+import slide3 from '/assets/drone-delivering-goods-city-autonomous-delivery-robot-business-air-transportation-concept.jpg'
+import slide4 from '/assets/employee-working-marketing-setting.jpg'
+import slide5 from '/assets/student-home-taking-notes-while-watching-presentation-closeup.jpg'
 
 const slides = [
   {

@@ -1,8 +1,8 @@
-import slide1 from "../assets/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop.jpg";
-import slide2 from '../assets/metal-worker-using-machinery-industrial-workshop-generated-by-ai.jpg'
-import slide3 from '../assets/drone-delivering-goods-city-autonomous-delivery-robot-business-air-transportation-concept.jpg'
-// import slide4 from '../assets/employee-working-marketing-setting.jpg'
-// import slide5 from '../assets/student-home-taking-notes-while-watching-presentation-closeup.jpg'
+import slide1 from "/assets/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop.jpg";
+import slide2 from '/assets/metal-worker-using-machinery-industrial-workshop-generated-by-ai.jpg'
+import slide3 from '/assets/drone-delivering-goods-city-autonomous-delivery-robot-business-air-transportation-concept.jpg'
+// import slide4 from '/assets/employee-working-marketing-setting.jpg'
+// import slide5 from '/assets/student-home-taking-notes-while-watching-presentation-closeup.jpg'
 
 const CaseStudies = () => {
   const caseStudies = [
@@ -39,7 +39,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section className="py-10 px-6 md:px-20 bg-gray-50">
+    <section className="py-10 px-6 md:px-20 bg-slate-200">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Case Studies
       </h2>
@@ -47,7 +47,7 @@ const CaseStudies = () => {
         {caseStudies.map((study, index) => (
           <div
             key={study.id}
-            className={`flex flex-col md:flex-row justify-center items-center mb-10 ${
+            className={`flex flex-col md:flex-row justify-center items-center mb-10 md:mb-0 ${
               index % 2 === 1 ? "md:flex-row-reverse" : ""
             }`}
           >

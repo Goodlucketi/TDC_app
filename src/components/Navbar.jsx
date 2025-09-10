@@ -45,7 +45,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               // offset={-70} // Adjust for fixed navbar height
-              className="block p-3 rounded-md hover:bg-blue-800 hover:text-white transition-all duration-300"
+              className="block p-3 rounded-md hover:bg-blue-800 hover:text-white transition-all duration-300 cursor-pointer"
               onClick={() => setIsOpen(false)} // close menu after click
             >
               {link.label}
@@ -54,7 +54,7 @@ const Navbar = () => {
         ))}
 
         <li>
-          <button className="bg-blue-800 py-2 px-4 rounded-md text-white hover:bg-blue-500 transition-all duration-300">
+          <button className="bg-blue-800 py-2 px-4 rounded-md text-white hover:bg-blue-500 transition-all duration-300 cursor-pointer">
             Get Started
           </button>
         </li>

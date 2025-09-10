@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
-    <section className="bg-blue-600 py-20 px-6 md:px-16 text-center text-white">
+    <section id="contact" className="bg-blue-600 py-20 px-6 md:px-16 text-center text-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Ready to Automate Your Industry?
